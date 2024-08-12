@@ -27,7 +27,7 @@ const AddTask = ({onNewItem}) => {
             <input type="date" value={date} onChange={handleDateChange} />
           </div>
           <div className="col-2">
-            <button type="button" className="btn btn-success kg-button" onClick={addButtonClicked}>
+            <button type="button" className="btn btn-success kg-button" onClick={data.length!==0 ? addButtonClicked : null}>
               Add
             </button>
           </div>
